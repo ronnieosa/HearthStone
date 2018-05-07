@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选牌界面效果实现</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./lib/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/jquery.nicescroll.min.js"></script>
+    <script src="./lib/swiper.min.js"></script>
+    <script src="./lib/store.legacy.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <section class="info">
+        <div class="container">
+            <div class="cards_main">
+                <div class="cards_data">
+                    <ul class="tabs_hero">
+                       <li class="tab_hero_dly active" data-hero="0" data-name="德鲁伊"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_lr" data-hero="1" data-name="猎人"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_fs" data-hero="2" data-name="法师"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_sqs" data-hero="3" data-name="圣骑士"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_ms" data-hero="4" data-name="牧师"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_dz" data-hero="5" data-name="盗贼"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_sm" data-hero="6" data-name="萨满"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_ss" data-hero="7" data-name="术士"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_zs" data-hero="8" data-name="战士"><a href="javascript:void(0);"></a></li>
+                       <li class="tab_hero_common" data-hero="9" data-name="中立"><a href="javascript:void(0);"></a></li>
+                    </ul>
+                    <h3 class="title_hero">德鲁伊</h3>
+                    <div class="swiper-container  swiper-active" data-swid="0">
+                        <div class="swiper-wrapper">
+                            <!--<div class="swiper-slide">-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__CS2_008_zhCN_.png" class="card_img" data-id="0" data-cost="0">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__EX1_169_zhCN_.png" class="card_img" data-id="1" data-cost="0">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__UNG_116_zhCN_.png" class="card_img" data-id="2" data-cost="1">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__UNG_108_zhCN_.png" class="card_img" data-id="3" data-cost="1">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__LOOT_051_zhCN_.png" class="card_img" data-id="4">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__LOOT_047_zhCN_.png" class="card_img" data-id="5">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__CS2_005_zhCN_.png" class="card_img" data-id="6">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__CFM_614_zhCN_.png" class="card_img" data-id="7">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="swiper-slide">-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__OG_051_zhCN_.png" class="card_img" data-id="8">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__EX1_161_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__EX1_578_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__CFM_602_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__KAR_300_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__OG_048_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__UNG_078_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__EX1_154_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="swiper-slide">-->
+                                <!--<div class="cards_place">-->
+                                    <!--<a href="#" class="cards_link">-->
+                                        <!--<img src="http://hearthstone.nos.netease.com/1/hscards/DRUID__ICC_051_zhCN_.png" class="card_img">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next dirc"></div>
+                        <div class="swiper-button-prev dirc"></div>
+                    </div>
+                    <div class="cards_page">
+                        第
+                        <strong>1</strong>
+                        页
+                    </div>
+                    <!--费用筛选区-->
+                    <div class="pageList">
+                        <div class="cards_search">
+                            <div class="searchWrap">
+                                <input class="searchInput" type="text" maxlength="12" placeholder="请输入关键字">
+                            </div>
+                        </div>
+                        <div class="cards_filter">
+                            <ul class="cards_option">
+                                <li class="mode">
+                                    <a href="javascript:void(0);">
+                                        <span class="mode_icon mode_standard" id="typeToggle"></span>
+                                        <ul class="mode_select_wrap">
+                                            <li class="active" rel="1">标准卡牌</li>
+                                            <li rel="0">狂野卡牌</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="all">
+                                    <a href="javascript:void(0);">
+                                        <span class="type_icon type_cost"></span>
+                                        <span class="type_all">所有</span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="0">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_0" data-costTarget="0"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="1">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_1" data-costTarget="1"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="2">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_2"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="3">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_3"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="4">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_4"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="5">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_5"></span>
+                                    </a>
+                                </li>
+                                <li class="cost" data-idx="6">
+                                    <a href="javascript:void(0);" class="type_icon type_cost">
+                                        <span class="cost_num cost_num_6"></span>
+                                    </a>
+                                </li>
+                                <li class="over cost" data-idx="7">
+                                    <a href="javascript:void(0);" class="type_icon type_cost type_7_cost">
+                                        <span class="cost_num cost_num_7"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_builder">
+                    <div class="cards_uid">
+                        <input type="text" placeholder="请输入ID查找套牌" maxlength="10">
+                        <a class="thumb_draw" href="javascript:void(0);"></a>
+                    </div>
+                    <a class="newCards btn_yellow_bg" href="javascript:void(0);">新套牌</a>
+                    <ul id="cards_group"><li></li></ul>
+                    <div id="cards_selected">
+                        <div class="cards_list_wrap">
+                            <ul id="cards_list">
+                                <!--<li id="" data-cost="0" data-id="22" data-cls="warrior" data-name="Inner Rage">-->
+                                    <!--<div class="card_list_small" style="background-image:url(http://hearthstone.nos.netease.com/1/hscards/WARRIOR__EX1_607_zhCN_.png);">-->
+                                        <!--<p class="card_name">怒火中烧</p>-->
+                                    <!--</div>-->
+                                    <!--<span class="cards_over"></span>-->
+                                    <!--<span class="cost_num_icon cost_num_0"></span>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                        <!--<span class="scroll_line"></span>-->
+                    </div>
+                    <div class="cards_save">
+                        <p class="cards_num"><strong>0</strong>/30卡牌</p>
+                        <a id="cards_finish" class="cards_btn cards_btn_disabled" href="javascript:void(0);">保存</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--卡牌详情浮层-->
+    <div class="fix-wrapper"></div>
+    <div class="popBox">
+        <p class="cards_big">
+            <img src="">
+        </p>
+        <div class="cards_detail">
+            <div class="detail_con">
+                <p class="detail_bg"></p>
+            </div>
+            <div class="detail_bottom">
+                <p class="rarity_txt"></p>
+                <p class="rarity_con">
+                    <span class="txt"></span>
+                    <span class="detail_rarity_icon"></span>
+                </p>
+                <p class="rarity_artist"></p>
+            </div>
+        </div>
+        <a class="cards_big_close" href="javascript:void(0);"><span class="btn_fork"></span>关闭</a>
+    </div>
+    <!--英雄选择浮层-->
+    <div id="hero_select" class="standard">
+        <a href="javascript:void(0);" class="select_mode standards_mode active" rel="1"></a>
+        <a href="javascript:void(0);" class="select_mode wild_mode" rel="0"></a>
+        <h3 class="">选择英雄</h3>
+        <ul class="hero_list clearFix">
+            <li><a rel="warrior" class="hero1" href="javascript:void(0);" data-hIdx="8"><span class="thumb_draw hero_light hero_active"></span><span class="hero_name">战士</span></a></li>
+            <li><a rel="shaman" class="hero2" href="javascript:void(0);" data-hIdx="6"><span class="thumb_draw hero_light"></span><span class="hero_name">萨满</span></a></li>
+            <li><a rel="rogue" class="hero3" href="javascript:void(0);" data-hIdx="5"><span class="thumb_draw hero_light"></span><span class="hero_name">潜行者</span></a></li>
+            <li><a rel="paladin" class="hero4" href="javascript:void(0);" data-hIdx="3"><span class="thumb_draw hero_light"></span><span class="hero_name">圣骑士</span></a></li>
+            <li><a rel="hunter" class="hero5" href="javascript:void(0);" data-hIdx="1"><span class="thumb_draw hero_light"></span><span class="hero_name">猎人</span></a></li>
+            <li><a rel="druid" class="hero6" href="javascript:void(0);" data-hIdx="0"><span class="thumb_draw hero_light"></span><span class="hero_name">德鲁伊</span></a></li>
+            <li><a rel="warlock" class="hero7" href="javascript:void(0);" data-hIdx="7"><span class="thumb_draw hero_light"></span><span class="hero_name">术士</span></a></li>
+            <li><a rel="mage" class="hero8" href="javascript:void(0);" data-hIdx="2"><span class="thumb_draw hero_light"></span><span class="hero_name">法师</span></a></li>
+            <li><a rel="priest" class="hero9" href="javascript:void(0);" data-hIdx="4"><span class="thumb_draw hero_light"></span><span class="hero_name">牧师</span></a></li>
+        </ul>
+        <a class="closeBtn" href="javascript:;">关闭</a>
+    </div>
+</body>
+</html>

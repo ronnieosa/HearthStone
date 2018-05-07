@@ -1,0 +1,952 @@
+body {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    width: 100%;
+    background: #27252A;
+    font-size: 12px;
+    word-break: break-all;
+    word-wrap: break-word;
+    position: relative;
+}
+.fix-wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    z-index: 1;
+    display: none;
+}
+.popBox {
+    width: 815px;
+    height: 380px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -407px;
+    margin-top: -190px;
+    display: none;
+}
+.popBox .cards_big {
+    float: left;
+    margin-top: -150px;
+}
+.popBox .cards_detail {
+    float: left;
+    width: 434px;
+    height: 379px;
+    position: relative;
+    z-index: 2;
+    background: url(http://hearthstone.nos.netease.com/3/cards/new/description_bg.png) no-repeat;
+}
+.cards_detail .detail_con {
+    padding: 65px 65px 0px;
+}
+.cards_detail .detail_bg {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    height: 135px;
+    line-height: 20px;
+}
+.cards_detail .detail_bottom {
+    height: 146px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.cards_detail .rarity_txt {
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    top: 9px;
+    height: 24px;
+    width: 100%;
+    line-height: 24px;
+}
+.cards_detail .rarity_con {
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    top: 51px;
+}
+.txt_legendary {
+    color: #c77402;
+}
+.txt_rare {
+    color: #2b7bd2;
+}
+.txt_common {
+    color: #fff;
+}
+.txt_epic {
+    color: #892ca4;
+}
+.detail_rarity_icon {
+    display: block;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/rarity_icon.png);
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 48px;
+    margin: 0 auto;
+}
+.rarity_legendary {
+    background-position: -184px 0;
+}
+.rarity_rare {
+    background-position: -92px 0;
+}
+.rarity_common {
+    background-position: -46px 0;
+}
+.rarity_epic {
+    background-position: -138px 0;
+}
+.cards_detail .rarity_artist {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    top: 115px;
+}
+.cards_big_close {
+    position: absolute;
+    right: -53px;
+    top: 0px;
+    font-size: 16px;
+    z-index: 1000000;
+    color: rgb(255, 255, 255);
+}
+.btn_fork {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/guide/btn_guide.png) -39px -195px no-repeat;
+}
+.popBox .cards_big img {
+    position: relative;
+    z-index: 2;
+}
+section {
+    background: url(../img/bg.jpg) no-repeat top center;
+}
+.container {
+    background: url(../img/info_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+    width: 1085px;
+    height: 880px;
+    /*margin: 55px 0 4px -30px;*/
+    margin: 55px auto;
+    color: #fff;
+    position: relative;
+}
+.cards_main {
+    width: 1000px;
+    height: 830px;
+    padding-top: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.cards_main .cards_data {
+    float: left;
+    width: 761px;
+    padding: 53px 0 0;
+    position: relative;
+}
+.cards_data .tabs_hero {
+    height: 62px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+}
+.tabs_hero li {
+    float: left;
+    width: 58px;
+    height: 44px;
+    padding-right: 2px;
+    position: relative;
+}
+.tabs_hero li.active {
+    width: 85px;
+    height: 62px;
+    margin-top: -12px;
+}
+.tabs_hero li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/tabHero_bg.png);
+    background-repeat: no-repeat;
+}
+.tabs_hero li a:hover {
+    opacity: .9;
+}
+.tabs_hero li.tab_hero_dly a {
+    background-position: 0 0;
+}
+.tabs_hero li.tab_hero_dly.active a {
+    background-position: 0 -54px;
+}
+.tabs_hero li.tab_hero_lr a {
+    background-position: -63px 0;
+}
+.tabs_hero li.tab_hero_lr.active a {
+    background-position: -85px -54px;
+}
+.tabs_hero li.tab_hero_fs a {
+    background-position: -124px 0;
+}
+.tabs_hero li.tab_hero_fs.active a {
+    background-position: -171px -54px;
+}
+.tabs_hero li.tab_hero_sqs a {
+    background-position: -186px 0;
+}
+.tabs_hero li.tab_hero_sqs.active a {
+    background-position: -257px -54px;
+}
+.tabs_hero li.tab_hero_ms a {
+    background-position: -247px 0;
+}
+.tabs_hero li.tab_hero_ms.active a {
+    background-position: -343px -54px;
+}
+.tabs_hero li.tab_hero_dz a {
+    background-position: -308px 0;
+}
+.tabs_hero li.tab_hero_dz.active a {
+    background-position: -428px -54px;
+}
+.tabs_hero li.tab_hero_sm a {
+    background-position: -370px 0;
+}
+.tabs_hero li.tab_hero_sm.active a {
+    background-position: -513px -54px;
+}
+.tabs_hero li.tab_hero_ss a {
+    background-position: -431px 0;
+}
+.tabs_hero li.tab_hero_ss.active a {
+    background-position: -598px -54px;
+}
+.tabs_hero li.tab_hero_zs a {
+    background-position: -492px 0;
+}
+.tabs_hero li.tab_hero_zs.active a {
+    background-position: -685px -54px;
+}
+.tabs_hero li.tab_hero_common a {
+    background-position: -553px 0;
+}
+.tabs_hero li.tab_hero_common.active a {
+    background-position: -770px -54px;
+}
+
+.cards_data h3 {
+    color: #301e06;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 15px;
+    line-height: 35px;
+    height: 35px;
+}
+
+.cards_data .swiper-container {
+    width: 706px;
+    height: 530px;
+    margin-right: 35px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color:#000;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+    flex-wrap: wrap;
+}
+.swiper-slide .cards_place {
+    width: 163px;
+    height: 265px;
+    margin: 0 13px 0 0;
+}
+.swiper-slide .cards_place img.card_img {
+    height: 236px;
+    display: inline;
+}
+.cards_place .cards_link {
+    position: relative;
+}
+.cards_place .cards_link:hover {
+    opacity: .9;
+}
+/*卡牌已满*/
+.cards_disable {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 8px;
+    width: 155px;
+    height: 50px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/draw/cards_dis.png) no-repeat 0 0;
+}
+.cards_disable_c {
+    background-position: 0 -50px;
+}
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 46%;
+    right: 0;
+    margin-top: -19px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/tab_hero.png) no-repeat -803px 0;
+}
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 46%;
+    left: -8px;
+    margin-top: -19px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/tab_hero.png) no-repeat -755px 0;
+}
+.swiper-button-disabled {
+    display: none;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    /*opacity: .35;*/
+    /*cursor: auto;*/
+    /*pointer-events: visiblepainted;*/
+}
+.status-bar {
+    display: block;
+    opacity: 1!important;
+    pointer-events: visiblepainted!important;
+}
+.cards_page {
+    color: #635645;
+    text-align: center;
+    font-size: 20px;
+    height: 45px;
+    margin-top: -12px;
+}
+.swiper-container{
+    display: none;
+}
+.swiper-active {
+    display: block;
+}
+.pageList {
+    position: relative;
+}
+.pageList .cards_search {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    z-index: 2;
+}
+.cards_search .searchWrap {
+    width: 207px;
+    height: 51px;
+    position: relative;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+    background-position: -590px -224px;
+}
+.cards_search .searchWrap input {
+    width: 110px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 10px 0 0 55px;
+    background: transparent;
+}
+input:focus, textarea:focus, select:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+.pageList .cards_filter {
+    padding-left: 7px;
+}
+.cards_filter .cards_option {
+    /*display: none;*/
+    width: 745px;
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    padding-left: 4px;
+}
+.cards_filter li {
+    float: left;
+}
+.cards_filter li.mode {
+    position: relative;
+}
+.cards_filter li.mode a {
+    height: 57px;
+    display: block;
+    background-image: none;
+}
+.cards_filter .mode_standard {
+    background-position: -392px -312px;
+    width: 77px;
+    height: 57px;
+    margin: -5px 5px 0 5px;
+}
+.cards_filter .mode_icon, .cards_filter .type_icon {
+    display: inline-block;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png);
+    background-repeat: no-repeat;
+}
+.mode_standard:hover {
+    background-position: -287px -312px;
+}
+.cards_filter li a {
+    position: relative;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png);
+    background-repeat: no-repeat;
+}
+.cards_filter li.all a {
+    width: 80px;
+    height: 45px;
+    display: block;
+    background-position: -70px 0;
+}
+.cards_filter .type_cost {
+    background-position: -64px -223px;
+    width: 34px;
+    height: 34px;
+    margin: 7px 0 0 5px;
+}
+.cards_filter a.type_cost:hover {
+    background-position: -13px -223px;
+}
+.cards_filter a.active {
+    background-position: -13px -223px!important;
+}
+.cards_filter .all .type_cost_active {
+    background-position: -13px -223px!important;
+}
+.cards_filter .type_all {
+    position: relative;
+    top: -12px;
+    left: 0;
+    color: #fff;
+}
+.cards_filter .cost_num {
+    display: inline-block;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png);
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 1;
+}
+.cards_filter .cost_num_0 {
+    background-position: -156px -60px;
+}
+.cards_filter .cost_num_1 {
+    background-position: -193px -60px;
+}
+.cards_filter .cost_num_2 {
+    background-position: -233px -60px;
+}
+.cards_filter .cost_num_3 {
+    background-position: -272px -60px;
+}
+.cards_filter .cost_num_4 {
+    background-position: -310px -60px;
+}
+.cards_filter .cost_num_5 {
+    background-position: -350px -60px;
+}
+.cards_filter .cost_num_6 {
+    background-position: -388px -60px;
+}
+.cards_filter .cost_num_7 {
+    background-position: -428px -60px;
+}
+.cards_filter li.over {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 45px;
+    display: block;
+    background-position: -421px -52px;
+}
+/*左侧划出框*/
+.cards_filter .mode_select_wrap {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -163px;
+    left: -232px;
+    width: 223px;
+    height: 131px;
+    padding: 25px 0 0;
+    transition: all .4s ease;
+    background: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png) no-repeat -4px -293px;
+}
+.cards_filter .mode_select_wrap.open {
+    left: -1px;
+    transition: all .4s ease;
+}
+.cards_filter .mode_select_wrap li {
+    width: 145px;
+    height: 50px;
+    line-height: 50px;
+    color: #372c1f;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+}
+.cards_filter .mode_select_wrap li.active, .cards_filter .mode_select_wrap li:hover {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/cost.png);
+}
+.cards_filter .mode_select_wrap li:hover {
+    background-position: -280px -385px;
+}
+.cards_filter .mode_select_wrap li.active {
+    background-position: -280px -445px;
+}
+/*-----------------------------右侧布局------------------------*/
+.cards_main .cards_builder {
+    float: left;
+    text-align: center;
+    width: 225px;
+    padding-top: 50px;
+    position: relative;
+}
+/*搜索框样式*/
+.cards_uid {
+    height: 72px;
+}
+.cards_uid input {
+    height: 30px;
+    line-height: 30px;
+    margin: 13px 0 0 26px;
+    width: 126px;
+    font-size: 14px;
+    color: #301E06;
+    background: transparent;
+}
+.cards_uid a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 30px;
+    background-position: -218px -13px;
+}
+.thumb_draw {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+}
+
+a.btn_yellow_bg {
+    color: #472c1e;
+    width: 186px;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-size: 17px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/btn.png) no-repeat -9px -195px;
+}
+a.btn_yellow_bg:hover {
+    background-position: -12px -286px;
+}
+/*英雄选择浮层*/
+#hero_select {
+    width: 727px;
+    height: 558px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -363px;
+    margin-top: -300px;
+    display: none;
+    z-index: 2;
+    padding-top: 115px;
+}
+#hero_select.standard {
+    background: url(http://hearthstone.nos.netease.com/3/cards/new/lb_standard_bg.png) no-repeat 0 0;
+}
+#hero_select .select_mode {
+    width: 290px;
+    height: 65px;
+    position: absolute;
+    top: 35px;
+    display: block;
+}
+#hero_select .select_mode.standards_mode {
+    left: 65px;
+}
+#hero_select .select_mode.wild_mode {
+    left: 400px;
+}
+#hero_select h3, #inputCodeBox h3, #saveBox h3, #saveTip h3 {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: #d19f59;
+    font-size: 16px;
+}
+/*ul*/
+#hero_select .hero_list {
+    width: 534px;
+    margin: 20px auto 0;
+}
+.clearFix {
+    display: block;
+}
+#hero_select .hero_list li {
+    float: left;
+    width: 172px;
+    height: 143px;
+    margin: 3px;
+}
+#hero_select .hero_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/draw/hero.png);
+    background-repeat: no-repeat;
+}
+#hero_select .hero_list li a.hero1 {
+    background-position: 0 -5px;
+}
+#hero_select .hero_list li a.hero2 {
+    background-position: -173px -5px;
+}
+#hero_select .hero_list li a.hero3 {
+    background-position: -346px -5px;
+}
+#hero_select .hero_list li a.hero4 {
+    background-position: 0 -145px;
+}
+#hero_select .hero_list li a.hero5 {
+    background-position: -173px -145px;
+}
+#hero_select .hero_list li a.hero6 {
+    background-position: -346px -145px;
+}
+#hero_select .hero_list li a.hero7 {
+    background-position: 0 -285px;
+}
+#hero_select .hero_list li a.hero8 {
+    background-position: -173px -285px;
+}
+#hero_select .hero_list li a.hero9 {
+    background-position: -346px -285px;
+}
+
+#hero_select .hero_list .hero_light {
+    display: none;
+    width: 172px;
+    height: 148px;
+    position: absolute;
+    background-position: -1px -179px;
+}
+#hero_select .hero_list .hero_active {
+    display: block;
+}
+.thumb_draw {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+}
+#hero_select .hero_list .hero_name {
+    position: absolute;
+    bottom: 26px;
+    left: 54px;
+    color: #fff;
+}
+#hero_select .closeBtn {
+    width: 44px;
+    display: block;
+    height: 46px;
+    position: absolute;
+    top: 24px;
+    right: 23px;
+    text-indent: -999em;
+    background: url(http://hearthstone.nos.netease.com/3/home/v1/lightbox.png) no-repeat -84px 0;
+}
+/*已选英雄角色*/
+#cards_group {
+    width: 156px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 3px;
+    display: none;
+}
+#cards_group li a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    background: url(http://hearthstone.nos.netease.com/3/cards/draw/hero.jpg) no-repeat 0 0;
+}
+#cards_group li a.group_zz {
+    background-position: 0 0;
+}
+#cards_group li a.group_sm {
+    background-position: 0 -180px;
+}
+#cards_group li a.group_dz {
+    background-position: 0 -240px;
+}
+#cards_group li a.group_sqs {
+    background-position: 0 -60px;
+}
+#cards_group li a.group_lr {
+    background-position: 0 -300px;
+}
+#cards_group li a.group_dly {
+    background-position: 0 -360px;
+}
+#cards_group li a.group_ss {
+    background-position: 0 -420px;
+}
+#cards_group li a.group_fs {
+    background-position: 0 -120px;
+}
+#cards_group li a.group_ms {
+    background-position: 0 -480px;
+}
+#cards_group li .name {
+    position: absolute;
+    top: 31px;
+    left: 5px;
+    height: 20px;
+    overflow: hidden;
+    color: #fff;
+    z-index: 2;
+}
+.thumb_draw {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+}
+#cards_group .group_standard {
+    height: 90px;
+    display: block;
+    position: absolute;
+    width: 185px;
+    left: -17px;
+    top: -17px;
+}
+#cards_group .group_standard {
+    background-position: -7px 0;
+}
+#cards_group .group_close {
+    width: 31px;
+    height: 33px;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    background-position: -292px -11px;
+}
+#cards_selected {
+    height: 523px;
+    position: relative;
+    width: 239px;
+    margin: 5px auto 0;
+}
+.cards_list_wrap {
+    width: auto;
+    margin-right: 0;
+    /*overflow: auto;*/
+    height: 528px;
+}
+#cards_list {
+    margin-left: -10px;
+    padding-top: 3px;
+}
+#cards_list li {
+    cursor: pointer;
+    position: relative;
+    height: 35px;
+    margin-top: -6px;
+}
+#cards_list li .card_list_small {
+    width: 178px;
+    height: 25px;
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 4px;
+    background-position: 84px -25px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+#cards_list li .card_list_small:before {
+    width: 197px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+    background-position: -218px -248px;
+}
+#cards_list li .card_list_small .card_name {
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 24px;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 0 1px rgba(0,0,0,.6);
+}
+#cards_list li.active .cards_over {
+    position: absolute;
+    display: block;
+    width: 210px;
+    height: 34px;
+    left: 21px;
+    top: 0;
+    background: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png) no-repeat -8px -340px;
+}
+#cards_list li .cards_two {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    right: 37px;
+    top: 6px;
+    background-position: -256px -14px;
+}
+.thumb_draw {
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+}
+#cards_list li .cost_num_icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: 6px;
+    background-image: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png);
+    background-repeat: no-repeat;
+}
+#cards_list li .cost_num_0 {
+    background-position: -218px -309px;
+}
+#cards_list li .cost_num_1 {
+    background-position: -256px -309px;
+}
+#cards_list li .cost_num_2 {
+    background-position: -295px -309px;
+}
+#cards_list li .cost_num_3 {
+    background-position: -333px -309px;
+}
+#cards_list li .cost_num_4 {
+    background-position: -373px -309px;
+}
+#cards_list li .cost_num_5 {
+    background-position: -412px -309px;
+}
+#cards_list li .cost_num_6 {
+    background-position: -451px -309px;
+}
+#cards_list li .cost_num_7 {
+    background-position: -491px -309px;
+}
+#cards_list li .cost_num_8 {
+    background-position: -530px -309px;
+}
+#cards_list li .cost_num_9 {
+    background-position: -566px -309px;
+}
+#cards_list li .cost_num_10 {
+    width: 21px;
+    background-position: -604px -309px;
+}
+
+#cards_selected .scroll_line {
+    display: block;
+    position: absolute;
+    width: 2px;
+    right: 6px;
+    top: -129px;
+    background: #301E06;
+    border-radius: 10px;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    height: 653px;
+    z-index:3;
+}
+.cards_builder .cards_save {
+    text-align: right;
+    margin-right: -27px;
+    position: relative;
+}
+.cards_save .cards_num {
+    width: 114px;
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+    text-indent: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    background: url(http://hearthstone.nos.netease.com/3/cards/draw/cards_num.jpg) no-repeat 0 0;
+}
+.cards_save .cards_num strong {
+    font-weight: 700;
+}
+#cards_finish {
+    position: absolute;
+    right: 0;
+}
+a.cards_btn {
+    background: url(http://hearthstone.nos.netease.com/3/cards/btn.png) no-repeat -4px -66px;
+    width: 157px;
+    height: 52px;
+    display: inline-block;
+    text-align: center;
+    line-height: 52px;
+    color: #472c1e!important;
+    font-size: 15px;
+}
+a.cards_btn_disabled {
+    color: #313131;
+    cursor: default;
+    background-position: -158px -4px;
+}
+/*滚动条相关*/
+.nicescroll-rails .nicescroll-cursors {
+    background-color: transparent!important;
+    background: url(http://hearthstone.nos.netease.com/3/cards/new/thumb.png) no-repeat -562px -2px;
+    width: 20px!important;
+    height: 62px!important;
+    border:none!important;
+    cursor: pointer!important;
+}
